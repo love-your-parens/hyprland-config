@@ -33,6 +33,7 @@ Just for app switching right now.
 ** Bespoke desktop
 *** Waybar
 *** Hyprsunset
+*** swaync
 *** Equinox
 *** Matugen
 *** Rofi or Vincinae or hyprlauncher
