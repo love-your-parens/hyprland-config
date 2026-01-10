@@ -1,0 +1,13 @@
+#+title: Notes
+
+* Extending the config
+Every ~.conf~ file under =hyprland.conf.d= will be autoloaded. If you want to ensure a particular load order, keep the files number-prefixed.
+#+begin_example
+00-this-goes-first.conf
+10-my-config.conf
+99-this-goes-last.conf
+#+end_example
+* Local configuration
+To keep a configuration file outside of version control, give it a ~.local.conf~ extension.
+* Selecting the main configuration
+Root configuration files are in the main dear and are named: ~hyprland.<configuration name>.conf~, e.g.: ~hyprland.noctalia.conf~. To select a root configuration file, symlink it to ~hyprland.conf~.
