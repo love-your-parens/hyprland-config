@@ -1,0 +1,31 @@
+* Core
+** [#A] hyprland
+Should resolve /most/ of its dependencies and optionals automatically. If not, see the installation guide.
+**  xdg-desktop-portal-hyprland
+If not installed by hyprland proper.
+** grimblast
+For screenshots.
+** qt6ct
+For themeing QT apps.
+** kitty
+The go-to terminal for Hyprland.
+** Dolphin
+Graphical file browser.
+* Optional
+** Noctalia-based desktop
+Noctalia itself handles the bulk of the interface here.
+*** quickshell
+To install Noctalia at all – it's the runtime.
+*** wlsunset
+Color temperature control.
+*** ddcutil
+Brightness control.
+*** Cava
+Audio visualisation.
+*** Vincinae or Rofi
+Just for app switching right now.
+** Bespoke desktop
+*** Waybar
+*** Hyprsunset
+*** Equinox
+*** Rofi or Vincinae or hyprlauncher
