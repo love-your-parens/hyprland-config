@@ -14,18 +14,25 @@ Graphical file browser.
 * Optional
 ** Noctalia-based desktop
 Noctalia itself handles the bulk of the interface here.
+See the official Noctalia installation guide for more information.
 *** quickshell
 To install Noctalia at all – it's the runtime.
-*** wlsunset
+*** Noctalia
+This is only a slice!
+**** wlsunset
 Color temperature control.
-*** ddcutil
+**** ddcutil
 Brightness control.
-*** Cava
+**** cliphist
+Clipboard history
+**** Cava
 Audio visualisation.
+*** Matugen
 *** Vincinae or Rofi
 Just for app switching right now.
 ** Bespoke desktop
 *** Waybar
 *** Hyprsunset
 *** Equinox
+*** Matugen
 *** Rofi or Vincinae or hyprlauncher
