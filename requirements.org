@@ -32,6 +32,9 @@ Audio visualisation.
 *** Matugen
 *** Vincinae or Rofi
 Just for app switching right now.
+*** Assets
+**** Icons
+~Tela~. Any icons be used, but this entails updating a startup hook in the config file.
 ** Bespoke desktop
 *** Waybar
 *** Hyprsunset
