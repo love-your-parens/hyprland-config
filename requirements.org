@@ -11,6 +11,8 @@ For themeing QT apps.
 The go-to terminal for Hyprland.
 ** Dolphin
 Graphical file browser.
+** Babashka
+For scripts.
 * Optional
 ** Noctalia-based desktop
 Noctalia itself handles the bulk of the interface here.
