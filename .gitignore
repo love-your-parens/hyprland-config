@@ -1,2 +1,5 @@
 *.local.conf
 /noctalia/noctalia-colors.conf
+/.clj-kondo/
+/.lsp/
+/.nrepl-port
