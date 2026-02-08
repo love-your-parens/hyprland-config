@@ -10,7 +10,7 @@
 (when-not (fs/exists? kdeglobals)
   (throw (Exception. (str kdeglobals " does not exist, aborting."))))
 
-(fs/copy kdeglobals (str kdeglobals ".kde")
+(fs/copy kdeglobals (str kdeglobals ".old")
          {:replace-existing true :copy-attributes true})
 
 (def sections
