@@ -10,4 +10,4 @@ Every ~.conf~ file under =hyprland.conf.d= will be autoloaded. If you want to en
 * Local configuration
 To keep a configuration file outside of version control, give it a ~.local.conf~ extension.
 * Selecting the main configuration
-Root configuration files are in the main dear and are named: ~hyprland.<configuration name>.conf~, e.g.: ~hyprland.noctalia.conf~. To select a root configuration file, symlink it to ~hyprland.conf~.
+Root configuration files are in the main directory and are named: ~hyprland.<configuration name>.conf~, e.g.: ~hyprland.noctalia.conf~. To select a root configuration file, symlink it to ~hyprland.conf~.
