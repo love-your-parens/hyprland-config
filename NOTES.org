@@ -1,13 +1,15 @@
 #+title: Notes
 
+* Configuration format
+Starting with v0.55, Hyprland is moving to LUA-based configuration. The ~.conf~ format is now considered legacy and will be dropped at some point in the future. *The two formats are mutually exclusive and can't be mixed*. /LUA/ will win out in the end, unless the author has some other revolutionary idea along the way. Stable software this is not. All the same, the entire config has now been migrated to /LUA/.
+
 * Extending the config
-Every ~.conf~ file under =hyprland.conf.d= will be autoloaded. If you want to ensure a particular load order, keep the files number-prefixed.
+The =./local= directory is excluded from version control. Any ~.lua~ file placed inside of it will be autoloaded. If you want to ensure a particular load order, keep the files number-prefixed, or otherwise maintain alphabetical order.
 #+begin_example
 00-this-goes-first.conf
 10-my-config.conf
 99-this-goes-last.conf
 #+end_example
-* Local configuration
-To keep a configuration file outside of version control, give it a ~.local.conf~ extension.
+
 * Selecting the main configuration
-Root configuration files are in the main directory and are named: ~hyprland.<configuration name>.conf~, e.g.: ~hyprland.noctalia.conf~. To select a root configuration file, symlink it to ~hyprland.conf~.
+~hyprland.lua~ is at simply a symlink pointing to ~hyprland.noctalia.lua~. If you want to select a different configuration root, change the symlink.

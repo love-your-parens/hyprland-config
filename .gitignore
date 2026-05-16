@@ -3,3 +3,5 @@
 /.clj-kondo/
 /.lsp/
 /.nrepl-port
+/local
+/noctalia/theme.lua

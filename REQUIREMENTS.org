@@ -1,44 +1,38 @@
 * Core
-** [#A] hyprland
+** hyprland
 Should resolve /most/ of its dependencies and optionals automatically. If not, see the installation guide.
 **  xdg-desktop-portal-hyprland
 If not installed by hyprland proper.
 ** grimblast
 For screenshots.
-** qt6ct
-For themeing QT apps.
+** qt6ct-kde
+For theming QT apps. Note: patched AUR version!
+** nwg-look
+For theming GKT apps.
 ** kitty
 The go-to terminal for Hyprland.
 ** Dolphin
 Graphical file browser.
 ** Babashka
 For scripts.
-* Optional
-** Noctalia-based desktop
+
+* Noctalia
 Noctalia itself handles the bulk of the interface here.
-See the official Noctalia installation guide for more information.
-*** quickshell
+See the [[https://docs.noctalia.dev/v4/][official Noctalia installation guide]] for more information.
+Here are some of the key dependencies.
+** quickshell
 To install Noctalia at all – it's the runtime.
-*** Noctalia
-This is only a slice!
-**** wlsunset
+** Matugen
+Material color scheme generator. Necessary for theming.
+** wlsunset
 Color temperature control.
-**** ddcutil
+** ddcutil
 Brightness control.
-**** cliphist
+** cliphist
 Clipboard history
-**** Cava
+** Cava
 Audio visualisation.
-*** Matugen
-*** Vincinae or Rofi
-Just for app switching right now.
-*** Assets
-**** Icons
+
+* Assets
+*** Icons
 ~Tela~. Any icons be used, but this entails updating a startup hook in the config file.
-** Bespoke desktop
-*** Waybar
-*** Hyprsunset
-*** swaync
-*** Equinox
-*** Matugen
-*** Rofi or Vincinae or hyprlauncher
