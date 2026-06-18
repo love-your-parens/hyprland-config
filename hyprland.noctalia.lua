@@ -217,7 +217,7 @@ hl.window_rule({
 hl.window_rule({
   name      = "spotify",
   workspace = "special:magic",
-  match     = { initial_class = "Spotify" },
+  match     = { initial_class = "[Ss]potify" },
 })
 
 hl.window_rule({
