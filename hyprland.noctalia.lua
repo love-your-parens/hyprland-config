@@ -174,6 +174,13 @@ hl.layer_rule({
   blur_popups  = true,
 })
 
+-- Selection-layer animations mess with screenshots - best to disable them
+hl.layer_rule({
+  name    = "no-anim-for-selection",
+  match   = { namespace = "selection" },
+  no_anim = true,
+})
+
 require("animations")
 
 

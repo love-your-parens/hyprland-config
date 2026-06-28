@@ -85,10 +85,10 @@ hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = tr
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
 
--- Screenshotting using grimblast
-hl.bind("print", hl.dsp.exec_cmd("GRIMBLAST_EDITOR=gwenview grimblast --freeze edit area"))
-hl.bind("SHIFT + print", hl.dsp.exec_cmd("grimblast --notify --openparentdir copysave screen"))
-hl.bind("SHIFT + CONTROL + print", hl.dsp.exec_cmd("grimblast --notify --openparentdir copysave active"))
+-- Screenshotting /w grim, slurp and gwenview
+hl.bind("print",
+  hl.dsp.exec_raw("fish -c 'area=\"$(slurp)\" if test -n \"$area\"; gwenview (grim -g \"$area\" - | psub -s .png); end'"))
+hl.bind("SHIFT + print", hl.dsp.exec_raw(os.getenv("XDG_CONFIG_HOME") .. "/hypr/screenshot.bb"))
 
 -- Noctalia
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call launcher toggle"))
