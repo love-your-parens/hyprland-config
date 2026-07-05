@@ -219,12 +219,16 @@ hl.window_rule({
   name      = "discord",
   workspace = "special:magic",
   match     = { initial_class = "discord|vesktop" },
+  pseudo    = true,
+  size      = { "(monitor_w*0.45)", "(monitor_h*0.9)" },
 })
 
 hl.window_rule({
   name      = "spotify",
   workspace = "special:magic",
   match     = { initial_class = "[Ss]potify" },
+  pseudo    = true,
+  size      = { "(monitor_w*0.45)", "(monitor_h*0.9)" },
 })
 
 hl.window_rule({
