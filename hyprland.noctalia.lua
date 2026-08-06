@@ -216,11 +216,12 @@ hl.window_rule({
 
 -- Certain apps to be spawned in the scratchpad workspace.
 hl.window_rule({
-  name      = "discord",
-  workspace = "special:magic",
-  match     = { initial_class = "discord|vesktop" },
-  pseudo    = true,
-  size      = { "(monitor_w*0.45)", "(monitor_h*0.9)" },
+  name        = "discord",
+  workspace   = "special:magic",
+  match       = { initial_class = "discord|vesktop" },
+  pseudo      = true,
+  no_auto_hdr = true,
+  size        = { "(monitor_w*0.45)", "(monitor_h*0.9)" },
 })
 
 hl.window_rule({
