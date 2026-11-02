@@ -91,8 +91,8 @@ hl.bind("print",
 hl.bind("SHIFT + print", hl.dsp.exec_raw(os.getenv("XDG_CONFIG_HOME") .. "/hypr/screenshot.bb"))
 
 -- Noctalia
-hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call launcher toggle"))
-hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call launcher windows"))
-hl.bind(mainMod .. " + GRAVE", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call lockScreen lock"))
-hl.bind(mainMod .. " + SHIFT + F5", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness decrease"))
-hl.bind(mainMod .. " + SHIFT + F6", hl.dsp.exec_cmd("qs -c noctalia-shell ipc call brightness increase"))
+hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("noctalia msg panel-open launcher"))
+hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("noctalia msg window-switcher"))
+hl.bind(mainMod .. " + GRAVE", hl.dsp.exec_cmd("noctalia msg session lock"))
+hl.bind(mainMod .. " + SHIFT + F5", hl.dsp.exec_cmd("noctalia msg brightness-down"))
+hl.bind(mainMod .. " + SHIFT + F6", hl.dsp.exec_cmd("noctalia msg brightness-up"))

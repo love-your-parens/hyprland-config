@@ -63,10 +63,7 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("nwg-look -a") -- restore gsettings
 
   -- Start Noctalia
-  -- hl.exec_cmd("qs -c noctalia-shell") -- Manual start.
-  -- With systemd. Recommended, but you need to create a service file yourself.
-  -- See: https://docs.noctalia.dev/getting-started/running-the-shell/
-  hl.exec_cmd("systemctl --user start noctalia")
+  hl.exec_cmd("noctalia")
 end)
 
 
@@ -268,8 +265,11 @@ hl.window_rule({
 --- THEME ---
 -------------
 
-require("noctalia.theme")
-
+-- Noctalia Color templates, loaded only if present.
+-- Currently overruled by a direct require statement,
+-- appended to the config by Noctalia's Hypr module. 
+-- local ok, module = pcall(require, "noctalia")
+-- if ok then module.apply_theme() end
 
 -----------------------
 --- LOCAL OVERRIDES ---
