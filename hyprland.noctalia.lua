@@ -123,9 +123,6 @@ hl.config({
 
     blur             = {
       enabled = true,
-      size = 3,
-      passes = 1,
-      vibrancy = 0.1696,
     },
   },
 
@@ -227,6 +224,7 @@ hl.window_rule({
   match     = { initial_class = "[Ss]potify" },
   pseudo    = true,
   size      = { "(monitor_w*0.45)", "(monitor_h*0.9)" },
+  no_auto_hdr = true,
 })
 
 hl.window_rule({
@@ -260,6 +258,11 @@ hl.window_rule({
   float = true,
 })
 
+hl.window_rule({
+  name = "ghostty",
+  match = { initial_class = "com.mitchellh.ghostty" },
+  opacity = 0.98,
+})
 
 -------------
 --- THEME ---
@@ -267,7 +270,7 @@ hl.window_rule({
 
 -- Noctalia Color templates, loaded only if present.
 -- Currently overruled by a direct require statement,
--- appended to the config by Noctalia's Hypr module. 
+-- appended to the config by Noctalia's Hypr module.
 -- local ok, module = pcall(require, "noctalia")
 -- if ok then module.apply_theme() end
 
