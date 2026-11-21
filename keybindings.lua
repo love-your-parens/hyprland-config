@@ -49,7 +49,14 @@ hl.bind(mainMod .. " + + SHIFT + S", hl.dsp.window.move({ workspace = "special:m
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 
-for k, w in pairs({ period = "e+1", comma = "e-1", N = "empty" }) do
+for k, w in pairs({
+  -- next workspace
+  period = "e+1", D = "e+1",
+  -- last workspace
+  comma = "e-1", A = "e-1",
+  -- new workspace
+  N = "empty", C = "empty",
+}) do
   hl.bind(mainMod .. " + " .. k, hl.dsp.focus({ workspace = w }))
   hl.bind(mainMod .. " + SHIFT + " .. k, hl.dsp.window.move({ workspace = w }))
 end
