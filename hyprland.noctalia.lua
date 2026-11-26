@@ -264,6 +264,18 @@ hl.window_rule({
   opacity = 0.98,
 })
 
+-- I'd like for fullscreen windows to land in a new workspace a la MacOS,
+-- which sadly isn't possible with Hyprland's static window rules.
+-- As a middle ground, we can target known window classes instead.
+-- This one's for Steam apps.
+hl.window_rule({
+    name = "fulscreen-windows-in-dedicated-workspace",
+    workspace = "Steam",
+    match = {
+        class = [[steam_app_\d+]],
+    },
+})
+
 -------------
 --- THEME ---
 -------------
